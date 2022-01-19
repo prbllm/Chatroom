@@ -2,7 +2,7 @@ QT       += core gui
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
-CONFIG += c++11
+CONFIG += c++20
 
 # You can make your code fail to compile if it uses deprecated APIs.
 # In order to do so, uncomment the following line.
@@ -11,11 +11,11 @@ CONFIG += c++11
 INCLUDEPATH += Include
 
 SOURCES += \
-    main.cpp \
-    Application.cpp
+    Source/main.cpp \
+    Source/Application.cpp
 
 HEADERS += \
-    Application.h
+    Include/Application.h
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
